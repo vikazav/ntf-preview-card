@@ -1,0 +1,145 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1440px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    margin: 0 auto;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+.container_box {
+    max-width: 1300px;
+    min-height: 815px;
+    background-color: #000;
+}
+
+.inner-container {
+    max-width: 320px;
+    min-height: 540px;
+    background-color: #15273f;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.box img {
+    width: 270px;
+    height: 270px;
+    align-self: center;
+    margin-bottom: 30px;
+
+}
+
+.header {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: 24px;
+}
+
+.text {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    position: relative;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.price:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url('/images/icon-ethereum.svg') no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.days {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    position: relative;
+    padding-left: 15px;
+}
+
+.days:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/images/icon-clock.svg') no-repeat;
+}
+
+.author {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+span {
+    color: #fff;
+}
