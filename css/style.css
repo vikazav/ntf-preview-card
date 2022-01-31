@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 *,
 *::before,
 *::after {
@@ -31,23 +32,23 @@ img {
   overflow: hidden;
   background-color: #0d192b;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.card-bg {
+.card {
   width: 320px;
   height: 540px;
   display: -webkit-box;
@@ -55,8 +56,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 25px;
   background-color: #14253d;
   border-radius: 5%;
@@ -66,7 +67,7 @@ img {
   box-shadow: -1px 18px 8px 17px #0c1729;
 }
 
-.card-image {
+.card__image {
   display: block;
   position: relative;
 }
@@ -75,12 +76,12 @@ img {
   width: 270px;
   height: 270px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   border-radius: 5%;
 }
 
-.card-image:hover .eye {
+.card__image:hover .eye {
   opacity: 1;
   visibility: visible;
   cursor: pointer;
@@ -114,31 +115,34 @@ img {
   transition: 0.5s;
 }
 
-.header {
+.card__header {
   margin-top: 30px;
   color: #fff;
   font-weight: 400;
   margin-bottom: 20px;
   font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.header:hover {
+
+.card__header:hover {
   color: #00fff7;
   cursor: pointer;
 }
 
-.text {
+.card__text {
   font-weight: 300;
   color: #8bacda;
   margin-bottom: 20px;
 }
 
-.terms {
+.card__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 20px;
 }
 
@@ -149,13 +153,14 @@ img {
   font-size: 16px;
   font-weight: 600;
 }
+
 .price:before {
   content: "";
   position: absolute;
   display: block;
   height: 100%;
   width: 100%;
-  background: url("/images/icon-ethereum.svg") no-repeat;
+  background: url("../images/icon-ethereum.svg") no-repeat;
   top: 0;
   left: 0;
 }
@@ -166,6 +171,7 @@ img {
   position: relative;
   padding-left: 25px;
 }
+
 .days:before {
   position: absolute;
   display: block;
@@ -174,27 +180,28 @@ img {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("/images/icon-clock.svg") no-repeat;
+  background: url("../images/icon-clock.svg") no-repeat;
 }
 
-.card-footer {
+.card__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 300;
   font-size: 18px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.card-footer img {
+
+.card__footer img {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
 }
 
-.card-footer:after {
+.card__footer:after {
   content: "";
   width: 270px;
   height: 1px;
@@ -209,9 +216,13 @@ img {
   padding-left: 15px;
   font-size: 16px;
 }
+
 .author span {
   color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
+
 .author span:hover {
   color: #00fff7;
   cursor: pointer;
